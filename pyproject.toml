@@ -1,0 +1,31 @@
+[project]
+name = "weenat-test"
+version = "0.1.0"
+description = "Weenat test"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "django>=5.2.3",
+    "django-rest-framework>=0.1.0",
+    "python-dotenv>=1.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.0",
+    "pytest-cov>=6.2.1",
+    "pytest-django>=4.11.1",
+    "ruff>=0.11.13",
+]
+prod = [
+    "uvicorn>=0.34.3",
+    "whitenoise>=6.9.0",
+]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings"
+python_files = [
+  "tests.py",
+  "test_*.py",
+  "*_tests.py"
+]
