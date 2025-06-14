@@ -1,0 +1,51 @@
+# Python files
+__pycache__/
+*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.ruff_cache/
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.swp
+
+# Virtual environment
+.venv/
+
+# Environment and secret files
+.env
+*.env
+
+# Logs and database
+*.log
+*.sqlite3
+*.db
+
+# Packaging artifacts
+*.egg-info/
+dist/
+build/
+
+# pip wheel metadata
+pip-wheel-metadata/
+
+# Static/media files
+staticfiles/
+static/
+media/
+
+# Docker-related files
+Dockerfile
+.dockerignore
+
+# Git
+.git
+.gitignore
+
+# Coverage
+htmlcov/
+*.coverage
+.coveragerc
